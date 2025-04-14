@@ -17,6 +17,8 @@ h2 {
 
 }
 body {
+    margin: 0;
+    padding: 0;
     background-color: cornflowerblue;
     height: 1000px;
     display: flex;
@@ -118,4 +120,33 @@ main {
     font-size: 14px;
     margin-top: 20px;
     width: 100%;
+}
+nav {
+    margin-top: 0;
+    background-color: #2a60aa;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    text-decoration: none;
+    color: beige;
+    font-family: "Inria Sans";
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav li a:hover {
+    color: #000000;
 }
