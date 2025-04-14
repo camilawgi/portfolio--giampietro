@@ -1,15 +1,121 @@
 @charset "utf-8";
 /* CSS Document */
-
-.caja {
-    height: 50px;
-    background-color: beige;
-    padding: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Gothic+Expanded+One&display=swap');
+h1 {
+    font-family: "Special Gothic Expanded One";
+    font-weight: 300;
+    color: beige;
+    font-size: 50px;
+    line-height: 15px;
+}
+h2 {
+    font-family: "inria sans";
+    font-size: 20px;
+    color: beige;
+    font-weight: 300;
 
 }
 body {
-    height: 1000px; 
-    padding: 0;
-    margin: 0;
+    background-color: cornflowerblue;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cabecera {
+    width: 70%;
+    display: flex;
+    gap: 10px;
+}
 
+#cabecera {
+  background-image: url('/img/header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+    background-color: rgb(245, 245, 245);
+    width: 70%;
+    height: 800px;
+}
+#cabecera div {
+    width: 100%;
+    padding-left: 10px;
+    background-color: rgba(0, 115, 255, 0.5);
+}
+#cabecera div p {
+    font-family: "inria sans";
+    font-size: 25px;
+    color: rgb(245, 245, 245);
+    font-weight: 500;
+
+}
+
+#cabecera img {
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+}
+.about-me{
+    display: flex;
+}
+.vida{
+    margin: 10px;
+    width: 100%;
+}
+.sobre-mi {
+    border-right: 2px solid rgb(42, 96, 170);
+    width: 30%;
+    margin-left: 10px;
+}
+.sobre-mi h3 {
+    font-family: "inria sans";
+    color: rgb(42, 96, 170);
+}
+.sobre-mi p {
+    font-family: "Inria Sans";
+    text-align: justify;
+    margin-right: 10px;
+}
+.vida ul {
+    font-family: "Inria Sans", sans-serif;
+    font-size: 16px;
+    color: #333;
+    list-style-type: square;
+    margin-bottom: 10px;
+  }
+  #cabecera ul {
+    font-family: "Inria Sans";
+    font-size: 16px;
+    color: beige;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  .vida {
+    font-family: "Inria Sans";
+    font-size: 20px;
+    color: rgb(42, 96, 170);
+  }
+  .vida ul li p {
+    font-family: "Inria Sans";
+    font-style: italic;
+    font-size: 14px;
+    color: #7e7979;
+    line-height: 0.5
+  }
+  footer {
+    background-color: #2a60aa;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: "inria sans";
+    font-size: 14px;
+    margin-top: 20px;
+    width: 100%;
 }
