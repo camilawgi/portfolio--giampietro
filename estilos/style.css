@@ -138,7 +138,6 @@ main {
     font-family: "Special Gothic Expanded One";
     color: #BF5468;
     font-size: 30px;
-    font-weight: ;
 }
 
 .galeria-imagenes {
@@ -314,4 +313,5 @@ nav li a:hover {
     }
     50% {
       transform: scale(1.2);
-        }
+    }
+  }
