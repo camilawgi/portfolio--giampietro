@@ -2,131 +2,186 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Gothic+Expanded+One&display=swap');
+
 h1 {
     font-family: "Special Gothic Expanded One";
     font-weight: 300;
-    color: beige;
+    color: #c05468;
     font-size: 50px;
-    line-height: 15px;
+    line-height: 40px;
 }
-h2 {
-    font-family: "inria sans";
-    font-size: 20px;
-    color: beige;
-    font-weight: 300;
 
+h2 {
+    font-family: "Inria Sans";
+    font-size: 20px;
+    color:#c05468;
+    font-weight: 300;
 }
+
 body {
+    width: 100%;
+    background-image: url('../img/fondo.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    background-color: cornflowerblue;
-    height: 1000px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    overflow-x: hidden;
+}
+main, #cabecera {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 #cabecera {
     width: 70%;
     display: flex;
-    gap: 10px;
-}
-
-#cabecera {
-  background-image: url('/img/header.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    gap: 100px;
+    height: 300px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 main {
-    background-color: rgb(245, 245, 245);
-    width: 70%;
-    height: 800px;
+    width: 100%;
+    min-height: 800px;
+    margin: 0 auto;
 }
+
 #cabecera div {
     width: 100%;
     padding-left: 10px;
-    background-color: rgba(0, 115, 255, 0.5);
 }
+
 #cabecera div p {
-    font-family: "inria sans";
+    font-family: "Inria Sans";
     font-size: 25px;
-    color: rgb(245, 245, 245);
+    color: #c05468;
     font-weight: 500;
 }
+
 #cabecera img {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(225, 135, 26);
     padding: 10px;
+    margin-left: -20px;
+    margin-right: 60px;
+    border-radius: 50%;
 }
+
 .about-me{
     display: flex;
 }
+
 .vida{
     margin: 10px;
     width: 100%;
 }
+
 .sobre-mi {
-    border-right: 2px solid rgb(42, 96, 170);
-    width: 30%;
+    border-right: 2px solid #BF5468;
+    width: 50%;
     margin-left: 10px;
+    height: 350px;
 }
+
 .sobre-mi h3 {
-    font-family: "inria sans";
-    color: rgb(42, 96, 170);
+    font-family: "Inria Sans";
+    color: #BF5468;
 }
+
 .sobre-mi p {
     font-family: "Inria Sans";
     text-align: justify;
     margin-right: 10px;
 }
+
 .vida ul {
     font-family: "Inria Sans", sans-serif;
     font-size: 16px;
     color: #333;
     list-style-type: square;
     margin-bottom: 10px;
-  }
-  #cabecera ul {
+}
+
+#cabecera ul {
     font-family: "Inria Sans";
     font-size: 16px;
-    color: beige;
+    color: #BF5468;
     list-style-type: none;
     padding-left: 0;
     margin-top: 10px;
-  }
-  .vida {
+}
+
+.vida {
     font-family: "Inria Sans";
     font-size: 20px;
-    color: rgb(42, 96, 170);
-  }
-  .vida ul li p {
+    color: #BF5468;
+}
+
+.vida ul li p {
     font-family: "Inria Sans";
     font-style: italic;
     font-size: 14px;
-    color: #7e7979;
-    line-height: 0.5
-  }
-  footer {
-    background-color: #2a60aa;
+    color: #BF5468;
+    line-height: 0.5;
+}
+
+.galeria {
+    width: 100%;
+    text-align: center;
+}
+
+.galeria h3 {
+    font-family: "Special Gothic Expanded One";
+    color: #BF5468;
+    font-size: 30px;
+    font-weight: ;
+}
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(225, 135, 26, 0.5);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.galeria-imagenes img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-imagenes img:hover {
+    transform: scale(1.05);
+}
+footer {
+    background-color: #c05468;
     color: white;
     text-align: center;
-    padding: 15px;
-    font-family: "inria sans";
+    font-family: "Inria Sans";
     font-size: 14px;
     margin-top: 20px;
     width: 100%;
+    box-sizing: border-box;
 }
+
 nav {
     margin-top: 0;
-    background-color: #2a60aa;
+    background-color: #BF5468;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
+
 nav ul {
     display: flex;
     gap: 30px;
@@ -136,12 +191,127 @@ nav ul {
 }
 nav li a {
     text-decoration: none;
-    color: beige;
+    color: #F2E0DF;
     font-family: "Inria Sans";
     font-size: 18px;
     font-weight: 500;
     transition: 0.3s ease;
 }
+
 nav li a:hover {
-    color: #000000;
+    color: #F27EA9;
 }
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    margin-left: 13.5%;
+    min-height: 500px;
+}
+
+.redes-sociales {
+    border-radius: 15px;
+    padding: 25px;
+    width: 20%;
+    background-color: rgba(147, 26, 30, 0.1);
+    padding: 20px;
+    border-right: 3px solid #BF5468;
+    font-family: "Inria Sans", sans-serif;
+    height: 300px;
+}
+
+.contenido {
+    width: 100%;
+}
+
+.redes-sociales h4 {
+    color: #BF5468;
+    margin-bottom: 10px;
+}
+
+.redes-sociales ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.redes-sociales li {
+    margin-bottom: 10px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.redes-sociales a i {
+    margin-right: 8px;
+    color: #BF5468;
+}
+.corazones-nav {
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+  }
+  
+.corazones-nav i {
+    color: rgba(225, 135, 26);
+    font-size: 20px;
+    animation: latido 1.5s infinite;
+  }
+ 
+.inspiracion {
+     width: 100%;
+     max-width: 1100px;
+     margin: 40px auto;
+     text-align: center;
+     padding: 20px;
+     margin: -60px auto;
+}   
+.inspiracion h3 {
+    font-family: "Special Gothic Expanded One";
+    color: rgb(225, 135, 26);
+    font-size: 30px;
+    font-weight: 150;
+}
+    
+.inspiracion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-bottom: 50px;
+}
+    
+.inspo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+}
+    
+.inspo-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid rgb(225, 135, 26);
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+    
+.inspo-item p {
+    font-family: "Inria Sans", sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    line-height: 1.4;
+}
+@keyframes latido {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+        }
